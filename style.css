@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+    width: 300px;
+    height: 510px;
+    background-color: hsl(216, 50%, 16%);
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.card figure {
+    margin: 20px;
+    border-radius: 10px;
+    border: 270px;
+    background-color: cyan;
+}
+
+.card figure img {
+    opacity: 1;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-transition: 0.5 ease-in-out;
+    transition: 0.5 ease-in-out;
+}
+
+.card figure:hover img {
+    opacity: 0.5;
+}
+
+.head img:hover .middle img {
+    opacity: 1;
+}
+
+.middle {
+    opacity: 0;
+    position: absolute;
+    left: 42.5%;
+    top: 25%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+.text {
+    font-family: 'Outfit', sans-serif;
+    padding: 0 20px;
+}
+
+#head-text h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#head-text a {
+    text-decoration: none;
+}
+
+#head-text h1:hover {
+    color: cyan;
+}
+
+#head-text p {
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#foot-text p {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.float-left p {
+    color: cyan;
+    float: left;
+    width: 50%;
+}
+
+#foot-text img {
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.float-right p {
+    color: hsl(215, 51%, 70%);
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+hr {
+    width: 100%;
+    background-color: hsl(215, 32%, 27%);
+    border: 0;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.profile {
+    margin: 15px 0;
+}
+
+.profile p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.profile img {
+    vertical-align: middle;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.cyan {
+    color: white;
+}
+
+.profile .cyan:hover {
+    color: cyan;
+}
+
+.profile a {
+    text-decoration: none;
+}
